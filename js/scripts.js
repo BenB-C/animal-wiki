@@ -13,5 +13,7 @@ $(document).ready(function() {
 
   $(".col-md-4").click(function() {
     $(this).children(".info").slideToggle();
+    $("img").removeClass("highlight");
+    $(this).children("img").addClass("highlight");
   });
 });
